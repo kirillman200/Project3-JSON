@@ -54,6 +54,8 @@ function topFlavours(jsonObj) {
   let topFlavours = jsonObj['topFlavours'];
   
   for (let i = 0; i < topFlavours.length; i++) {
+      
+    var counter = 0;
     //create a few different elements 
     let article = document.createElement('article');
     let h2 = document.createElement('h2');
@@ -61,11 +63,29 @@ function topFlavours(jsonObj) {
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
+    let map = document.createElement('div');
     
     //grab the data associated with image to set the src and alt attribute
     img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topFlavours[i].image);
     img.setAttribute('alt', topFlavours[i].image );
-    
+    map.setAttribute('id', 'map');
+      if(counter = 0){
+    var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+      
+        if(counter = 1){
+    var uluru = {lat: -5.344, lng: 231.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+      }
     h2.textContent = topFlavours[i].name; 
     p1.textContent = 'price: ' + topFlavours[i].price;
     p2.textContent = 'description: ' + topFlavours[i].description;
@@ -85,7 +105,8 @@ function topFlavours(jsonObj) {
     article.appendChild(p2);
     article.appendChild(list);
     section.appendChild(article); 
-     
+      
+    counter++; 
   }
 
 }
