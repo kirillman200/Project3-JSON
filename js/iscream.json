@@ -40,6 +40,7 @@
     ],
     "image" : "strawberry-sprinkle.svg"
     },
+    
       {
     "name" : "Perfect Peach Mango", 
     "price" : 560,
@@ -49,6 +50,7 @@
     ],
     "image" : "peach-mango.svg"
   },
+    
       {
     "name" : "Perfect Peach Mango", 
     "price" : 560,
