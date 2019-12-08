@@ -52,10 +52,10 @@ function topFlavours(jsonObj) {
   
   //bind top flavours object to a variables 
   let topFlavours = jsonObj['topFlavours'];
-  
+    var counter = 0;
   for (let i = 0; i < topFlavours.length; i++) {
       
-    var counter = 0;
+  
     //create a few different elements 
     let article = document.createElement('article');
     let h2 = document.createElement('h2');
