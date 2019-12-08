@@ -120,7 +120,7 @@ function topFlavours(jsonObj) {
   var map3 = new google.maps.Map(document.getElementById("map3"), mapProps);
 };
 
-//google.maps.event.addDomListener(window, 'load', mapInit);
+google.maps.event.addDomListener(window, 'load', mapInit);
 
 }
 
