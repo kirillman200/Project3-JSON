@@ -103,8 +103,9 @@ function topFlavours(jsonObj) {
     article.appendChild(p1); 
     article.appendChild(p2);
     article.appendChild(list);
+    article.appendChild(map); 
     section.appendChild(article); 
-    section.appendChild(map); 
+  
       
     counter++; 
   }
