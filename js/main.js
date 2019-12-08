@@ -97,7 +97,6 @@ function topFlavours(jsonObj) {
       }
       
   // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
     h2.textContent = topFlavours[i].name; 
     p1.textContent = 'price: ' + topFlavours[i].price;
     p2.textContent = 'description: ' + topFlavours[i].description;
