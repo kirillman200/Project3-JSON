@@ -5,9 +5,8 @@ let header = document.querySelector('header');
 let section = document.querySelector('section');
 
 //Step Two - create a variable to store request URL 
-let requestURL = "http://aws.computerstudi.es/~gc200412952/Project3/iscream.json";
-//https://jessicagilfillan.github.io/JSONmon/iscream.json
-//http://aws.computerstudi.es/~gc200412952/Project3/iscream.json
+let requestURL = "https://kirillman200.github.io/Project3-JSON/js/iscream.json";
+
 // Step Three - create a new XHR object 
 let request = new XMLHttpRequest(); 
 
