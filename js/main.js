@@ -71,11 +71,11 @@ function topFlavours(jsonObj) {
     img.setAttribute('alt', topFlavours[i].image );
    
       
-      if(counter = 0){
+      if(counter == 0){
     div.setAttribute('id', 'map');
       }
       
-        if(counter = 1){
+        if(counter == 1){
        div.setAttribute('id', 'map1');
  
       }
