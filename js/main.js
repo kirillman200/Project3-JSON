@@ -64,19 +64,19 @@ function topFlavours(jsonObj) {
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
     let div = document.createElement('div');
-    var uluru = 0;  
+   
     
     //grab the data associated with image to set the src and alt attribute
     img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topFlavours[i].image);
     img.setAttribute('alt', topFlavours[i].image );
-    div.setAttribute('id', 'map');
+   
       
       if(counter = 0){
-   
+    div.setAttribute('id', 'map');
       }
       
         if(counter = 1){
-      
+       div.setAttribute('id', 'map1');
  
       }
       
@@ -115,8 +115,8 @@ function topFlavours(jsonObj) {
     center: myLatLng
   }
 
-  var map1 = new google.maps.Map(document.getElementById("map1"), mapProps);
-  var map2 = new google.maps.Map(document.getElementById("map2"), mapProps);
+  var map1 = new google.maps.Map(document.getElementById("map"), mapProps);
+  var map2 = new google.maps.Map(document.getElementById("map1"), mapProps);
   var map3 = new google.maps.Map(document.getElementById("map3"), mapProps);
 };
 
