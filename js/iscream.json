@@ -5,58 +5,62 @@
 "active" : true,
 "topFlavours" : [
   {
-    "name" : "Monstrous Mint", 
-    "price" : 800,
-    "description" : "ice cream", 
+    "name" : "A pigeon mask", 
+    "price" : 27.48,
+    "description" : "You can finally roam the neighborhood in peace disguised in this lifelike pigeon mask. Hey, you might even get thrown a couple bread crumbs from sympathetic passersby!", 
     "features" : [
-      "peppermint cream", 
-      "dark chocolate chips", 
-      "vanilla" 
+      "durable", 
+      "funny"
+       
     ],
     "image": "pigeon.jpg"
   },
   
   {
-    "name" : "Perfect Peach Mango", 
-    "price" : 560,
-    "description" : "sorbet",
+    "name" : "A bloody bath mat", 
+    "price" : 12.96,
+    "description" : "If you've ever dreamed of turning your bathroom into a scene from a horror movie, you're apparently not alone—and Amazon has the perfect accessory for you.",
     "features" : [
-      "peach puree", "mango", "honey"
+      "scary", 
+      "innovative"
+      
     ],
     "image" : "bloody-bath-mat.jpg"
   },
   
   {
-    "name" : "Stupendous Strawberry",
-    "price" : 1400,
-    "description" : "frozen yogurt",
+    "name" : "Nothing",
+    "price" : 6.98,
+    "description" : "What do you get for the person who has everything? Nothing—literally. But unlike traditional nothing, this one will cost you almost $7.",
     "features" : [
-      "strawberries", 
-      "goats milk", 
-      "wheat grass", 
-      "chocolate",
-      "blue cheese",
-      "sprinkles"
+      "nothing", 
+      "cost 7 dollars", 
+      "great present", 
+      "nothing—literally"
     ],
     "image" : "nothing.jpg"
     },
     
       {
-    "name" : "Perfect Peach ", 
-    "price" : 560,
-    "description" : "sorbet",
+    "name" : "A horror movie sound maker", 
+    "price" : 299,
+    "description" : "Surprise guests by making them think It is hiding just around the corner.",
     "features" : [
-      "peach puree", "mango", "honey"
+      "scary",
+      "expensive", 
+      "surprise"
     ],
     "image" : "horror.jpg"
   },
     
       {
-    "name" : "Perfect  Mango", 
-    "price" : 560,
-    "description" : "sorbet",
+    "name" : "A hand squirrel", 
+    "price" : 6.50,
+    "description" : "While it's all well and good to have a variety of puppets at your disposal, few things rival this strangely-realistic hand squirrel.",
     "features" : [
-      "peach puree", "mango", "honey"
+      "just on your hand",
+      "squirrel",
+      "cute"
     ],
     "image" : "hand-squirrel.jpg"
   }
