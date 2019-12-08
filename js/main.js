@@ -63,13 +63,13 @@ function topFlavours(jsonObj) {
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
-    let map = document.createElement('div');
+    let div = document.createElement('div');
     var uluru = 0;  
     
     //grab the data associated with image to set the src and alt attribute
     img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topFlavours[i].image);
     img.setAttribute('alt', topFlavours[i].image );
-    map.setAttribute('id', 'map');
+    div.setAttribute('id', 'map');
       if(counter = 0){
     var uluru = {lat: -25.344, lng: 131.036};
   // The map, centered at Uluru
@@ -103,7 +103,7 @@ function topFlavours(jsonObj) {
     article.appendChild(p1); 
     article.appendChild(p2);
     article.appendChild(list);
-    article.appendChild(map); 
+    article.appendChild(div); 
     section.appendChild(article); 
   
       
