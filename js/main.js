@@ -79,6 +79,20 @@ function topFlavours(jsonObj) {
        div.setAttribute('id', 'map1');
  
       }
+          if(counter == 2){
+    div.setAttribute('id', 'map2');
+      }
+      
+        if(counter == 3){
+       div.setAttribute('id', 'map3');
+ 
+      }
+      
+        
+        if(counter == 4){
+       div.setAttribute('id', 'map4');
+ 
+      }
       
   // The marker, positioned at Uluru
     h2.textContent = topFlavours[i].name; 
