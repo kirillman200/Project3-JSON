@@ -23,7 +23,7 @@
     "features" : [
       "peach puree", "mango", "honey"
     ],
-    "image" : "peach-mango.svg"
+    "image" : "bloody-bath-mat.jpg"
   },
   
   {
@@ -38,7 +38,7 @@
       "blue cheese",
       "sprinkles"
     ],
-    "image" : "strawberry-sprinkle.svg"
+    "image" : "nothing.jpg"
     },
     
       {
@@ -48,7 +48,7 @@
     "features" : [
       "peach puree", "mango", "honey"
     ],
-    "image" : "peach-mango.svg"
+    "image" : "horror.jpg"
   },
     
       {
@@ -58,7 +58,7 @@
     "features" : [
       "peach puree", "mango", "honey"
     ],
-    "image" : "peach-mango.svg"
+    "image" : "hand-squirrel.jpg"
   }
     
   ]
