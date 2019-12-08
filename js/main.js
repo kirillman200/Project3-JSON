@@ -70,19 +70,32 @@ function topFlavours(jsonObj) {
     img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topFlavours[i].image);
     img.setAttribute('alt', topFlavours[i].image );
     div.setAttribute('id', 'map');
+      
       if(counter = 0){
-    var uluru = {lat: -25.344, lng: 131.036};
+   function initMap() {
+  // The location of Uluru
+   uluru = {lat: -25.344, lng: 131.036};
   // The map, centered at Uluru
-  
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
       }
       
         if(counter = 1){
-    var uluru = {lat: -5.344, lng: 231.036};
+       function initMap() {
+  // The location of Uluru
+   uluru = {lat: -5.344, lng: 131.036};
   // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
  
       }
-      var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
+      
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
     h2.textContent = topFlavours[i].name; 
