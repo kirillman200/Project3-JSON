@@ -5,7 +5,7 @@ let header = document.querySelector('header');
 let section = document.querySelector('section');
 
 //Step Two - create a variable to store request URL 
-let requestURL = "https://kirillman200.github.io/Project3-JSON/js/iscream.json";
+let requestURL = "https://kirillman200.github.io/Project3-JSON/js/weird.json";
 
 // Step Three - create a new XHR object 
 let request = new XMLHttpRequest(); 
@@ -25,11 +25,11 @@ request.send();
 // Step Seven - adding an event handler that listens for onload event of the JSON file/object 
 request.onload = function() {
    
-  let iScreamInc = request.response; 
-  console.log(iScreamInc);
-  populateHeader(iScreamInc); 
-  topFlavours(iScreamInc); 
-    ready(iScreamInc);
+  let weird = request.response; 
+  console.log(weird);
+  populateHeader(weird); 
+  topWeird(weird); 
+    ready(weird);
 }
 
 // Step Eight - set up populateHeader function to fill in the header function 
@@ -50,13 +50,13 @@ function populateHeader(jsonObj) {
 
 // define the topflavours function to show the flavours
 
-function topFlavours(jsonObj) {
+function topWeird(jsonObj) {
   
   //bind top flavours object to a variables 
-  let topFlavours = jsonObj['topFlavours'];
+  let topWeird = jsonObj['topWeird'];
     var counter = 0;
      
-  for (let i = 0; i < topFlavours.length; i++) {
+  for (let i = 0; i < topWeird.length; i++) {
       
   
     //create a few different elements
@@ -70,8 +70,8 @@ function topFlavours(jsonObj) {
     let divBorder = document.createElement('div');
     
     //grab the data associated with image to set the src and alt attribute
-    img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topFlavours[i].image);
-    img.setAttribute('alt', topFlavours[i].image );
+    img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topWeird[i].image);
+    img.setAttribute('alt', topWeird[i].image );
     img.setAttribute('class', 'images' );
    divBorder.setAttribute('class', 'border');
       
@@ -101,11 +101,11 @@ function topFlavours(jsonObj) {
       }
       
   // The marker, positioned at Uluru
-    h2.textContent = topFlavours[i].name; 
-    p1.textContent = 'Price: ' + topFlavours[i].price;
-    p2.textContent = 'Description: ' + topFlavours[i].description;
+    h2.textContent = topWeird[i].name; 
+    p1.textContent = 'Price: ' + topWeird[i].price;
+    p2.textContent = 'Description: ' + topWeird[i].description;
     
-    let features = topFlavours[i].features;
+    let features = topWeird[i].features;
     for(let j = 0; j < features.length; j++ ) {
       let listItem = document.createElement('li'); 
       listItem.textContent = features[j];
