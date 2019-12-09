@@ -21,13 +21,15 @@ request.responseType = 'json';
 
 request.send();
 
-
+ alert("Sorry for inconvenience. If you dont see maps, try to reload page couple times. They definetly are working :) ")
 // Step Seven - adding an event handler that listens for onload event of the JSON file/object 
 request.onload = function() {
+   
   let iScreamInc = request.response; 
   console.log(iScreamInc);
   populateHeader(iScreamInc); 
-  topFlavours(iScreamInc);  
+  topFlavours(iScreamInc); 
+    ready(iScreamInc);
 }
 
 // Step Eight - set up populateHeader function to fill in the header function 
@@ -53,10 +55,11 @@ function topFlavours(jsonObj) {
   //bind top flavours object to a variables 
   let topFlavours = jsonObj['topFlavours'];
     var counter = 0;
+     
   for (let i = 0; i < topFlavours.length; i++) {
       
   
-    //create a few different elements 
+    //create a few different elements
     let article = document.createElement('article');
     let h2 = document.createElement('h2');
     let img = document.createElement('img');
@@ -64,18 +67,21 @@ function topFlavours(jsonObj) {
     let p2 = document.createElement('p');
     let list = document.createElement('ul');
     let div = document.createElement('div');
-   
+    let divBorder = document.createElement('div');
     
     //grab the data associated with image to set the src and alt attribute
     img.setAttribute('src', 'https://kirillman200.github.io/Project3-JSON/images/' + topFlavours[i].image);
     img.setAttribute('alt', topFlavours[i].image );
-   
+    img.setAttribute('class', 'images' );
+   divBorder.setAttribute('class', 'border');
       
       if(counter == 0){
-    div.setAttribute('id', 'map');
+ 
+        div.setAttribute('id', 'map');
       }
       
         if(counter == 1){
+        
        div.setAttribute('id', 'map1');
  
       }
@@ -96,8 +102,8 @@ function topFlavours(jsonObj) {
       
   // The marker, positioned at Uluru
     h2.textContent = topFlavours[i].name; 
-    p1.textContent = 'price: ' + topFlavours[i].price;
-    p2.textContent = 'description: ' + topFlavours[i].description;
+    p1.textContent = 'Price: ' + topFlavours[i].price;
+    p2.textContent = 'Description: ' + topFlavours[i].description;
     
     let features = topFlavours[i].features;
     for(let j = 0; j < features.length; j++ ) {
@@ -108,13 +114,17 @@ function topFlavours(jsonObj) {
     
     // Append each element to article, then append article to section 
     
-    article.appendChild(img); 
-    article.appendChild(h2);
+    
+  
+    article.appendChild(h2);  
+    article.appendChild(img);
     article.appendChild(p1); 
     article.appendChild(p2);
     article.appendChild(list);
     article.appendChild(div); 
+    article.appendChild(divBorder); 
     section.appendChild(article); 
+    
   
       
     counter++; 
