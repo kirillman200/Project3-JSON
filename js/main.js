@@ -121,20 +121,86 @@ function topFlavours(jsonObj) {
   }
     
     function mapInit() {
-  
   var myLatLng = new google.maps.LatLng(52.525595, 13.393085);
-  
+
   var mapProps = {
     zoom: 8,
     center: myLatLng
   }
 
-  var map1 = new google.maps.Map(document.getElementById("map"), mapProps);
-  var map2 = new google.maps.Map(document.getElementById("map1"), mapProps);
-  var map3 = new google.maps.Map(document.getElementById("map3"), mapProps);
+  var map = new google.maps.Map(document.getElementById("map"), mapProps);
+
+  var marker = new google.maps.Marker({position: myLatLng, map: map});
+
+};
+     function mapInit1() {
+  var myLatLng1 = new google.maps.LatLng(44.525595, -79.393085);
+
+   var mapProps1 = {
+    zoom: 8,
+    center: myLatLng1
+  }
+
+
+  var map1 = new google.maps.Map(document.getElementById("map1"), mapProps1);
+
+  var marker1 = new google.maps.Marker({position: myLatLng1, map: map1});
+
 };
 
-google.maps.event.addDomListener(window, 'load', mapInit);
+       function mapInit2() {
+ 
+  var myLatLng2 = new google.maps.LatLng(50.4501, 30.5234);
+
+    var mapProps2 = {
+    zoom: 8,
+    center: myLatLng2
+  }
+
+
+
+  var map2 = new google.maps.Map(document.getElementById("map2"), mapProps2);
+
+  var marker2 = new google.maps.Marker({position: myLatLng2, map: map2});
+
+};
+      function mapInit3() {
+  
+  var myLatLng3 = new google.maps.LatLng(13.7563, 100.5018);
+  
+
+     var mapProps3 = {
+    zoom: 8,
+    center: myLatLng3
+  }
+
+
+
+  var map3 = new google.maps.Map(document.getElementById("map3"), mapProps3);
+
+  var marker3 = new google.maps.Marker({position: myLatLng3, map: map3});
+};
+      function mapInit4() {
+
+
+  var myLatLng4 = new google.maps.LatLng(27.9881, 86.9250);
+  
+
+      var mapProps4 = {
+    zoom: 8,
+    center: myLatLng4
+  }
+
+
+  var map4 = new google.maps.Map(document.getElementById("map4"), mapProps4);
+
+  var marker4 = new google.maps.Marker({position: myLatLng4, map: map4});
+};    
+    google.maps.event.addDomListener(window, 'load', mapInit);
+    google.maps.event.addDomListener(window, 'load', mapInit1);
+    google.maps.event.addDomListener(window, 'load', mapInit2);
+    google.maps.event.addDomListener(window, 'load', mapInit3);
+    google.maps.event.addDomListener(window, 'load', mapInit4);
 
 }
 
