@@ -120,7 +120,12 @@ function topFlavours(jsonObj) {
     counter++; 
   }
     
-    function mapInit() {
+ 
+
+}
+function ready(){
+    
+   function mapInit() {
   var myLatLng = new google.maps.LatLng(52.525595, 13.393085);
 
   var mapProps = {
@@ -201,6 +206,6 @@ function topFlavours(jsonObj) {
     google.maps.event.addDomListener(window, 'load', mapInit2);
     google.maps.event.addDomListener(window, 'load', mapInit3);
     google.maps.event.addDomListener(window, 'load', mapInit4);
-
-}
+};
+ document.addEventListener("DOMContentLoaded", ready);
 
