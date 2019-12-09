@@ -1,9 +1,9 @@
 {
-"companyName" : "Weird Products",
+"companyName" : "Weird Products", //company name 
 "headOffice" : "Barrie, Ontario",
 "established" : 2019, 
 "active" : true,
-"topWeird" : [
+"topWeird" : [ // object with different objects inside
   {
     "name" : "A pigeon mask", 
     "price" : 27.48,

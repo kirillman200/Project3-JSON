@@ -1,11 +1,11 @@
-.parallax, .parralax1, body {
-  /* The image used */
+.parallax, .paralax1, body {
+/* image */
   background-image: url(../images/matrix.jpg);
 
-  /* Set a specific height */
+  
   height: 500px;
 
-  /* Create the parallax scrolling effect */
+  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,9 +15,14 @@
 header p{
     text-align: center;
 }
+footer p{
+    margin: 0% 25% 0% 25%; 
+    text-align: center;
+}
 .section{
     margin: 0% 25% 5% 25%;
 }
+/*setting a shadow for my text*/
 p, article ul{
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     font-size: 30px;
@@ -46,9 +51,9 @@ p, article ul{
     
 }
 
+/*image size*/
 .images{
 
-	
     margin: 1%;
     width: 45%;
 }
@@ -63,10 +68,8 @@ p, article ul{
   box-shadow: 5px 10px 8px 10px salmon;
  }
 
-.border{
-    margin-top: 10%;
-    border-bottom: 3px dotted black;
-}
+
+/*setting a shadow for my h1*/
 h1{
  
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
@@ -110,7 +113,7 @@ h1{
       -28px 56px 1px #e4e3e2;
   
 }
-
+/*setting a shadow for my h2*/
 h2{
     text-align: center;
     padding: 30px;
